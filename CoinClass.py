@@ -1,12 +1,13 @@
 import random
 
+#You would never really run this. Just save an apply
 # The Coin class simulates a coin that can
 # be flipped.
-
+# use upper case for naming class variable
 class Coin:
     # The _ _init_ _ method initializes the
     # sideup data attribute with 'Heads'.
-
+    #ensures that instance calling it is the only thing interacting with it
     def __init__(self):
         self.sideup = 'Heads'
 
@@ -23,6 +24,8 @@ class Coin:
 
     # The get_sideup method returns the value
     # referenced by sideup.
+    #Logic is used this way for checking. Compartmenatlize as much as possible
+    #Accessor methods or get methods are used for retunring a varibale
 
     def get_sideup(self):
             return self.sideup
