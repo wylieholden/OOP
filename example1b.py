@@ -4,13 +4,13 @@ import example_1 as e  # name of python file
 # The main function.
 def main():
     # Create an object from the Coin class.
-    my_flight = (
-        e.Insect()
-    )  # this creates an instance called 'my_coin' of the class 'Coin()'
+    mosquito = I.insect('mosquito',2,4)
+    housefly = I.insect('housefly',2,4)
 
-    # Display the side of the coin that is facing up.
-    print(
-        "The flight is:", my_flight.self.flight()
+    mosquito.flight_length()
+    housefly.flight_length()
+
+    print(f"the {mosquito.get_name()} can gly to { mosquito.flight_length()}
     )  # notice you do not have to supply the argument/parameter
 
     # Toss the coin.

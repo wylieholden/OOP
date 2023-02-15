@@ -10,15 +10,13 @@ class Insect:
     # sideup data attribute with 'Heads'.
     # ensures that instance calling it is the only thing interacting with it
     def __init__(self):
-        self.wings = "2"
-        self.legs = "4"
-        self.flight = "0"
+        self.name = n
+        self.wings = w
+        self.legs = l
+        self.flight = 0
 
     def get_number(self):
-        if self.wings == "Two" and self.legs == "Four":
-            self.flight = random.randint(0, 10)
-        else:
-            print("No flight!")
+        slef.flight = random.randint(1, 10)
 
     # The get_sideup method returns the value
     # referenced by sideup.
